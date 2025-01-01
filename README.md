@@ -2,7 +2,7 @@
 > [!NOTE]
 > This project is in its early stages
 
-🧰 Your class's one stop solution for portfolios, notes and other resources Your class's one stop solution for portfolios, notes and other resources 🧰 Your class's one stop solution for portfolios, notes and other resources 🗣
+🧰 Your class's one stop solution for portfolios, notes and other resources 🗣
 
 ---
 
