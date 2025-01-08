@@ -1,0 +1,47 @@
+theme: docura
+
+enableGitInfo: true
+
+defaultContentLanguage: en
+
+languages:
+  en:
+    weight: 1
+    languageName: English
+    languageCode: en-US
+    contentDir: content/en
+    title: Breakpoint
+    params:
+      description: Your class's one stop solution for portfolios, notes and other resources
+
+markup:
+  highlight:
+    noClasses: false
+  goldmark:
+    renderer:
+      unsafe: true
+
+  themeColors:
+    light: "#ffffff"
+    dark: "#121212"
+
+  years:
+    start: 2025
+    present: 2025
+
+  home:
+    repository: "https://github.com/Ranger-NF/Breakpoint"
+
+menu:
+  main:
+    - url: /
+      name: Home
+      identifier: home
+      pre: "<i class='icon icon-home'></i>"
+      weight: 1
+
+    - url: /resources
+      name: Resources
+      identifier: res
+      pre: "<i class='icon icon-book'></i>"
+      weight: 2
