@@ -13,7 +13,7 @@ This project is aimed to simplify accessing class's resources and also to encour
 
 ## Technology
 - [Hugo](https://gohugo.io/) - This is mainly goig to be a static site, so this is the best fit
-  - Theme used: [Doks](https://themes.gohugo.io/themes/doks/)
+  - Theme used: [Docura](https://themes.gohugo.io/themes/docura/)
 
 ## Design & Roadmap
 [Excalidraw](https://excalidraw.com/#json=-WaB4k63yCbB2kX8HOy-v,MHSqE5GspJtAXsqaeM1Bng)
