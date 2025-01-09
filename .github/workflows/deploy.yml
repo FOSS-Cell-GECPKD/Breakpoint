@@ -32,7 +32,7 @@ jobs:
     build:
         runs-on: ubuntu-latest
         env:
-            HUGO_VERSION: 0.126.0
+            HUGO_VERSION: 0.140.2
         steps:
             - name: Install Hugo CLI
               run: |
@@ -52,8 +52,10 @@ jobs:
             - name: Setup Pages
               id: pages
               uses: actions/configure-pages@v4
+            - name: Install Yarn
+              run: corepack enable
             - name: Install dependencies
-              run: '[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true'
+              run: yarn install --frozen-lockfile
             - name: Build production website
               env:
                   # For maximum backward compatibility with Hugo modules
@@ -61,7 +63,7 @@ jobs:
                   HUGO_ENV: production
                   TZ: America/Los_Angeles
               run: |
-                  npm run build \
+                  yarn build \
                     -- \
                     --baseURL "${{ steps.pages.outputs.base_url }}/"
             - name: Upload artifact
