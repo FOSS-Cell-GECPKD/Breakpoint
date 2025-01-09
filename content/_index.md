@@ -1,5 +1,5 @@
 ---
-title: "Welcome to Breakpoint"
+title: "Welcome to Breakpoint;"
 description: ""
 lead: "Your class's one stop solution for notes and other resources!"
 date: 2023-09-07T16:33:54+02:00
