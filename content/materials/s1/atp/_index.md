@@ -1,5 +1,5 @@
 ---
-title: "Atp"
+title: "Python"
 description: ""
 summary: ""
 date: 2025-01-09T21:31:34+05:30

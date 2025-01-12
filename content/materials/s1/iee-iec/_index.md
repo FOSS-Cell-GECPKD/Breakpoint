@@ -1,5 +1,5 @@
 ---
-title: "Iee Iec"
+title: "Introduction to EEE and ECE"
 description: ""
 summary: ""
 date: 2025-01-09T21:31:42+05:30
