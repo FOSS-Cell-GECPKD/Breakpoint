@@ -11,3 +11,5 @@ seo:
   canonical: "" # custom canonical URL (optional)
   noindex: false # false (default) or true
 ---
+
+Download Link: <a href="/uploads/s1/atp/M1/atp-1.pdf" target="_blank">DOWNLOAD</a>
