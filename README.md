@@ -1,19 +1,32 @@
-# Breakpoint
-> [!NOTE]
-> This project is in its early stages
-
-🧰 Your class's one stop solution for portfolios, notes and other resources 🗣
-
+---
+icon: hand-wave
+cover: https://gitbookio.github.io/onboarding-template-images/header.png
+coverY: 0
+layout:
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: false
+  outline:
+    visible: false
+  pagination:
+    visible: false
 ---
 
-This is going to be a smartphone-focused website, that has sections to showcase projects, portfolios. Also having the ability to access notes and similar resources with ease
+# Welcome
 
-## Intention
-This project is aimed to simplify accessing class's resources and also to encourage sharing and growing with others
+Welcome to Breakpoint;&#x20;
 
-## Technology
-- [Hugo](https://gohugo.io/) - This is mainly goig to be a static site, so this is the best fit
-  - Theme used: [Docura](https://themes.gohugo.io/themes/docura/)
+The one stop solution for all things - Notes, showcasing, etc.
 
-## Design & Roadmap
-[Excalidraw](https://excalidraw.com/#json=-WaB4k63yCbB2kX8HOy-v,MHSqE5GspJtAXsqaeM1Bng)
+
+
+{% content-ref url="materials/semester-2/" %}
+[semester-2](materials/semester-2/)
+{% endcontent-ref %}
+
