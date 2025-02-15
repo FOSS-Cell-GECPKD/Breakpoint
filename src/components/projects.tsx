@@ -32,7 +32,7 @@ const ProjectsPage = () => {
       className="min-h-screen m-10"
     >
       <div className="max-w-7xl mx-auto">
-        <div className="">
+        <div>
           <div className="grid justify-center md:flex md:justify-between text-center">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
               Breakpoint;
@@ -47,7 +47,7 @@ const ProjectsPage = () => {
           </div>
 
           {/* Search and filter */}
-          <div className="flex flex-wrap justify-center gap-4 mb-8">
+          <div className="flex flex-wrap justify-center gap-4 mb-8 pt-3">
             <div className="relative flex-grow ">
               <Search
                 className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
