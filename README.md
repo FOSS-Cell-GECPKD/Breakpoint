@@ -7,7 +7,11 @@ A space for YOU to showcase YOUR projects!
 Welcome! We're excited to showcase your project. Follow these simple steps to add your work to our collection.
 
 ### Project Template
-Copy and fill out this template:
+
+### How to Submit
+1. Fork the repository
+2. Add your project to `data.json`
+3. Place your project at the end of the "projects" array, with the given format:
 ```json
 {
   "studentName": "Your Full Name",
@@ -19,6 +23,8 @@ Copy and fill out this template:
   "image": "https://link-to-your-project-image.com"  // Must be a direct image link
 }
 ```
+4. Ensure your JSON is valid (you can use [JSONLint](https://jsonlint.com/))  *Optional*
+5. Create a Pull Request
 
 ### Requirements
 - **Image**:
@@ -30,12 +36,6 @@ Copy and fill out this template:
 - **Tags**: Use existing tags when possible
 - **Links**: Must be valid and accessible
 
-### How to Submit
-1. Fork the repository
-2. Add your project to `data.json`
-3. Place your project at the end of the "projects" array
-4. Ensure your JSON is valid (you can use [JSONLint](https://jsonlint.com/))
-5. Create a Pull Request
 
 ### Common Tags
 Here are some commonly used tags:
