@@ -79,7 +79,8 @@ const ProjectsPage = () => {
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredProjects.map((project) => (
-            <div
+            <a
+              href={project.projectLink}
               key={project.id}
               className="bg-white border border-black rounded-md overflow-hidden hover:rotate-3 transition-transform"
             >
@@ -117,21 +118,21 @@ const ProjectsPage = () => {
                       className="flex items-center gap-2 text-gray-700 hover:text-gray-900"
                     >
                       <SiGithub size={20} />
-                      <span>Code</span>
+                      <span>Source Code</span>
                     </a>
                   )}
                   <a
-                    href={project.demoLink}
+                    href={project.projectLink}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-gray-700 hover:text-gray-900"
                   >
                     <ExternalLink size={20} />
-                    <span>Demo</span>
+                    <span>Project Link</span>
                   </a>
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>

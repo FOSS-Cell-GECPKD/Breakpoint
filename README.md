@@ -18,7 +18,7 @@ Welcome! We're excited to showcase your project. Follow these simple steps to ad
   "projectName": "Your Project Name",
   "description": "A brief description of your project (max 100 characters)",
   "tags": ["Tag1", "Tag2", "Tag3"],  // Choose relevant technologies/categories
-  "demoLink": "https://your-demo-link.com",
+  "projectLink": "https://your-demo-link.com", // MANDATORY! - Site Link or Github (if any)
   "githubLink": "https://github.com/your-username/your-repo",
   "image": "https://link-to-your-project-image.com"  // Must be a direct image link
 }
