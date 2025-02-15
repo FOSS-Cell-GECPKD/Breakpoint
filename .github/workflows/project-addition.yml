@@ -1,0 +1,80 @@
+name: Validate Project Data
+
+on:
+  pull_request:
+    paths:
+      - "data.json"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "16"
+
+      - name: Install dependencies
+        run: npm install ajv
+
+      - name: Validate JSON
+        run: |
+          node -e "
+            const Ajv = require('ajv');
+            const ajv = new Ajv();
+            const schema = {
+              type: 'object',
+              required: ['projects'],
+              properties: {
+                projects: {
+                  type: 'array',
+                  items: {
+                    type: 'object',
+                    required: ['studentName', 'projectName', 'description', 'tags', 'githubLink', 'image'],
+                    properties: {
+                      id: { type: 'number' },
+                      studentName: { type: 'string', minLength: 1 },
+                      projectName: { type: 'string', minLength: 1 },
+                      description: { type: 'string', maxLength: 100 },
+                      tags: {
+                        type: 'array',
+                        items: { type: 'string' },
+                        minItems: 1
+                      },
+                      demoLink: { type: 'string', format: 'uri' },
+                      githubLink: { type: 'string', format: 'uri' },
+                      image: {
+                        type: 'string',
+                        format: 'uri',
+                        pattern: '\\.(jpg|jpeg|png|gif)$'
+                      }
+                    }
+                  }
+                }
+              }
+            };
+
+            const data = require('./data.json');
+            const valid = ajv.validate(schema, data);
+
+            if (!valid) {
+              console.error('Validation errors:', ajv.errors);
+              process.exit(1);
+            }
+          "
+
+      - name: Check for duplicate projects
+        run: |
+          node -e "
+            const data = require('./data.json');
+            const projects = data.projects;
+            const names = new Set();
+            for (const project of projects) {
+              if (names.has(project.projectName)) {
+                console.error('Duplicate project name:', project.projectName);
+                process.exit(1);
+              }
+              names.add(project.projectName);
+            }
+          "

@@ -14,7 +14,7 @@ Copy and fill out this template:
   "projectName": "Your Project Name",
   "description": "A brief description of your project (max 100 characters)",
   "tags": ["Tag1", "Tag2", "Tag3"],  // Choose relevant technologies/categories
-  "demoLink": "https://your-demo-link.com",  // Optional
+  "demoLink": "https://your-demo-link.com",
   "githubLink": "https://github.com/your-username/your-repo",
   "image": "https://link-to-your-project-image.com"  // Must be a direct image link
 }
