@@ -115,7 +115,7 @@ const ProjectsPage = () => {
                       href={project.githubLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-gray-700 hover:text-gray-900"
+                      className="flex items-center gap-2 p-1 rounded-md text-gray-700 hover:text-white hover:bg-black"
                     >
                       <SiGithub size={20} />
                       <span>Source Code</span>
@@ -125,7 +125,7 @@ const ProjectsPage = () => {
                     href={project.projectLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-gray-700 hover:text-gray-900"
+                    className="flex items-center gap-2 p-1 rounded-md text-gray-700 hover:text-white hover:bg-black"
                   >
                     <ExternalLink size={20} />
                     <span>Project Link</span>
