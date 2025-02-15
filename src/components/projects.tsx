@@ -36,7 +36,7 @@ const ProjectsPage = () => {
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Breakpoint;</h1>
           <a
             className="flex h-fit w-fit p-2 bg-black rounded-md text-white"
-            href="https://github.com/Ranger-NF/Breakpoint"
+            href="https://github.com/Ranger-NF/Breakpoint?tab=readme-ov-file#how-to-add-your-project"
           >
             <PlusIcon />
             Add my project
