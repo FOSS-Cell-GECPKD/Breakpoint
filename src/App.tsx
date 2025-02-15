@@ -1,3 +1,4 @@
+import Footer from "./components/footer";
 import Intro from "./components/intro";
 import ProjectsPage from "./components/projects";
 
@@ -6,6 +7,7 @@ const ProjectShowcase = () => {
     <div className="relative">
       <Intro />
       <ProjectsPage />
+      <Footer />
     </div>
   );
 };

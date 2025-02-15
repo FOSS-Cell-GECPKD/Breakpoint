@@ -32,51 +32,56 @@ const ProjectsPage = () => {
       className="min-h-screen m-10"
     >
       <div className="max-w-7xl mx-auto">
-        <div className="grid justify-center md:flex md:justify-between p-3 text-center">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Breakpoint;</h1>
-          <a
-            className="flex justify-self-center h-fit w-fit p-2 bg-black rounded-md text-white"
-            href="https://github.com/Ranger-NF/Breakpoint?tab=readme-ov-file#how-to-add-your-project"
-          >
-            <PlusIcon />
-            Add my project
-          </a>
-        </div>
-        {/* Search and Filter Section */}
-        <div className="flex flex-wrap justify-center gap-4 mb-8">
-          <div className="relative flex-grow ">
-            <Search
-              className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
-              size={20}
-            />
-            <input
-              type="text"
-              placeholder="Search projects..."
-              className="pl-10 pr-4 py-2 w-full border rounded-lg"
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-            />
+        <div className="">
+          <div className="grid justify-center md:flex md:justify-between text-center">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+              Breakpoint;
+            </h1>
+            <a
+              className="flex justify-self-center h-fit w-fit p-2 bg-black rounded-md text-white"
+              href="https://github.com/FOSS-Cell-GECPKD/Breakpoint?tab=readme-ov-file#how-to-add-your-project"
+            >
+              <PlusIcon />
+              Add my project
+            </a>
           </div>
 
-          <select
-            className="border rounded-lg px-4 py-2 bg-white"
-            value={selectedTag}
-            onChange={(e) => setSelectedTag(e.target.value)}
-          >
-            <option value="">All Tags</option>
-            {allTags.map((tag) => (
-              <option
-                key={tag}
-                value={tag}
-                className="text-red bg-white border border-black"
-              >
-                {tag}
-              </option>
-            ))}
-          </select>
+          {/* Search and filter */}
+          <div className="flex flex-wrap justify-center gap-4 mb-8">
+            <div className="relative flex-grow ">
+              <Search
+                className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
+                size={20}
+              />
+              <input
+                type="text"
+                placeholder="Search projects..."
+                className="pl-10 pr-4 py-2 w-full border rounded-lg"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+              />
+            </div>
+
+            <select
+              className="border rounded-lg px-4 py-2 bg-white"
+              value={selectedTag}
+              onChange={(e) => setSelectedTag(e.target.value)}
+            >
+              <option value="">All Tags</option>
+              {allTags.map((tag) => (
+                <option
+                  key={tag}
+                  value={tag}
+                  className="text-red bg-white border border-black"
+                >
+                  {tag}
+                </option>
+              ))}
+            </select>
+          </div>
         </div>
 
-        {/* Projects Grid */}
+        {/* Projects grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredProjects.map((project) => (
             <a
