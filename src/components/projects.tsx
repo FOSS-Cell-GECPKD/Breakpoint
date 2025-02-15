@@ -32,10 +32,10 @@ const ProjectsPage = () => {
       className="min-h-screen m-10"
     >
       <div className="max-w-7xl mx-auto">
-        <div className="grid justify-center md:flex md:justify-between p-3">
+        <div className="grid justify-center md:flex md:justify-between p-3 text-center">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Breakpoint;</h1>
           <a
-            className="flex h-fit w-fit p-2 bg-black rounded-md text-white"
+            className="flex justify-self-center h-fit w-fit p-2 bg-black rounded-md text-white"
             href="https://github.com/Ranger-NF/Breakpoint?tab=readme-ov-file#how-to-add-your-project"
           >
             <PlusIcon />
