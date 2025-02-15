@@ -1,0 +1,24 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "studentName": "Mohammed Fahad",
+      "projectName": "BlastOff",
+      "description": "A casual endless runner game featuring vector graphics",
+      "tags": ["Game", "Godot", "Art"],
+      "demoLink": "https://ranger-nf.itch.io/blastoff",
+      "githubLink": "https://github.com/Ranger-NF/BlastOff",
+      "image": "https://img.itch.zone/aW1nLzE2NjAzNDg2LmdpZg==/original/Cb3ysj.gif"
+    },
+    {
+      "id": 2,
+      "studentName": "Mohammed Fahad",
+      "projectName": "Personal Website",
+      "description": "Personal website made with hugo",
+      "tags": ["Hugo", "Portfolio"],
+      "githubLink": "https://github.com/bob/task-manager",
+      "demoLink": "https://justfahad.me/",
+      "image": "https://i.postimg.cc/ZYXDcT2p/personal-site.png"
+    }
+  ]
+}
