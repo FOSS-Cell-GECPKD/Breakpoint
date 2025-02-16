@@ -19,6 +19,16 @@
       "githubLink": "https://github.com/Ranger-NF/Personal-Website",
       "projectLink": "https://justfahad.me/",
       "image": "https://i.postimg.cc/ZYXDcT2p/personal-site.png"
+    },
+    {
+      "id": 3,
+      "studentName": "Viswanatha Kartha V",
+      "projectName": "Blog made using Hugo",
+      "description": "Blog made with hugo",
+      "tags": ["Hugo", "Blog"],
+      "githubLink": "https://github.com/anima-regem/theDistant.git",
+      "projectLink": "https://blog.animaregem.me/",
+      "image": "https://i.postimg.cc/CL604mCv/Screenshot-from-2025-02-16-09-50-34.png"
     }
   ]
 }
