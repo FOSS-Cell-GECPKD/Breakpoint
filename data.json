@@ -49,6 +49,16 @@
       "githubLink": "https://github.com/anima-regem/bookThief.git",
       "projectLink": "https://book-thief-chi.vercel.app/",
       "image": "https://github.com/anima-regem/bookThief/blob/main/static/favicon.png?raw=true"
+    },
+    {
+      "id": 6,
+      "studentName": "Viswanatha Kartha V",
+      "projectName": "Vyajan",
+      "description": "Tired of senting a message to your whatsapp chats to save your links? Vyajan is here to help you!",
+      "tags": ["Flutter", "Dart", "Mobile App", "Android", "iOS", "Link", "Manager"],
+      "githubLink": "https://github.com/anima-regem/Vyajan",
+      "projectLink": "https://github.com/anima-regem/Vyajan/releases/",
+      "image": "https://i.postimg.cc/sx4YrMmX/You-Tube-Cover-Photo.png"
     }
   ]
 }
