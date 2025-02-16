@@ -42,7 +42,7 @@ jobs:
                         items: { type: 'string' },
                         minItems: 1
                       },
-                      demoLink: { type: 'string', format: 'uri' },
+                      projectLink: { type: 'string', format: 'uri' },
                       githubLink: { type: 'string', format: 'uri' },
                       image: {
                         type: 'string',
