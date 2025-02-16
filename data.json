@@ -19,6 +19,16 @@
       "githubLink": "https://github.com/Ranger-NF/Personal-Website",
       "projectLink": "https://justfahad.me/",
       "image": "https://i.postimg.cc/ZYXDcT2p/personal-site.png"
+    },
+    {
+      "id": 3,
+      "studentName": "N Fadeela",
+      "projectName": "Planto🍃",
+      "description": "A beautifull and powerful website that provides information about plants",
+      "tags": ["Web", "Full Stack","Plants"],
+      "githubLink": "https://github.com/Fadeeii/Planto-",
+      "projectLink": "https://fadeeii.github.io/Planto-/",
+      "image": "https://i.postimg.cc/ZYXDcT2p/personal-site.png"
     }
   ]
 }
