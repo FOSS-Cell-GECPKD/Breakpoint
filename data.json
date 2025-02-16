@@ -39,6 +39,16 @@
       "githubLink": "https://github.com/anima-regem/gaster.git",
       "projectLink": "https://github.com/anima-regem/gaster/releases/",
       "image": "https://camo.githubusercontent.com/332696331b56231754758bfb9c68e1a38c8103d0e9ca0da36a6a485b4f9276c7/68747470733a2f2f6d65646961302e67697068792e636f6d2f6d656469612f336f726e6a57796c54547a366530534849732f323030772e776562703f6369643d64646132346435306a736761786a3179756a306c7a3932656d6b76686b7a68733178336173666b3432347171346137382665703d76315f696e7465726e616c5f6769665f62795f6964267269643d323030772e776562702663743d67"
+    },
+    {
+      "id": 5,
+      "studentName": "Viswanatha Kartha V",
+      "projectName": "bootThief",
+      "description": "Welcome to the most over-engineered way to get book recommendations since your local librarian got replaced by a coffee machine!",
+      "tags": ["Svelte", "SvelteKit", "TailwindCSS", "Groq", "Book", "Recommendations", "Web App"],
+      "githubLink": "https://github.com/anima-regem/bookThief.git",
+      "projectLink": "https://book-thief-chi.vercel.app/",
+      "image": "https://github.com/anima-regem/bookThief/blob/main/static/favicon.png?raw=true"
     }
   ]
 }
