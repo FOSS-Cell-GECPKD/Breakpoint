@@ -6,12 +6,10 @@ A space for YOU to showcase YOUR projects!
 ## How to Add Your Project
 Welcome! We're excited to showcase your project. Follow these simple steps to add your work to our collection.
 
-### Project Template
-
 ### How to Submit
 1. Fork the repository
 2. Add your project to `data.json`
-3. Place your project at the end of the "projects" array, with the given format:
+3. Place your project at the end of the "projects" array, with the given template:
 ```json
 {
   "studentName": "Your Full Name",
