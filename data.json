@@ -29,6 +29,46 @@
       "githubLink": "https://github.com/Fadeeii/Planto-",
       "projectLink": "https://fadeeii.github.io/Planto-/",
       "image": "https://github.com/user-attachments/assets/c02e1203-3c80-4c59-9d43-cad39ac1116f"
+    },
+    {
+      "id": 4,
+      "studentName": "Viswanatha Kartha V",
+      "projectName": "theDistant",
+      "description": "Blog made with hugo",
+      "tags": ["Hugo", "Blog"],
+      "githubLink": "https://github.com/anima-regem/theDistant.git",
+      "projectLink": "https://blog.animaregem.me/",
+      "image": "https://i.postimg.cc/CL604mCv/Screenshot-from-2025-02-16-09-50-34.png"
+    },
+    {
+      "id": 5,
+      "studentName": "Viswanatha Kartha V",
+      "projectName": "Gaster",
+      "description": "Who needs to go to Google Maps and search \"CNG Pumps Near Me\", when you can have an app for just that...",
+      "tags": ["Flutter", "Dart", "Google Maps API", "CNG Pumps", "Gas Stations", "Mobile App", "Android", "iOS"],
+      "githubLink": "https://github.com/anima-regem/gaster.git",
+      "projectLink": "https://github.com/anima-regem/gaster/releases/",
+      "image": "https://media0.giphy.com/media/3ornjWylTTz6e0SHIs/200w.webp"
+    },
+    {
+      "id": 6,
+      "studentName": "Viswanatha Kartha V",
+      "projectName": "bootThief",
+      "description": "Welcome to the most over-engineered way to get book recommendations since your local librarian got replaced by a coffee machine!",
+      "tags": ["Svelte", "SvelteKit", "TailwindCSS", "Groq", "Book", "Recommendations", "Web App"],
+      "githubLink": "https://github.com/anima-regem/bookThief.git",
+      "projectLink": "https://book-thief-chi.vercel.app/",
+      "image": "https://raw.githubusercontent.com/anima-regem/bookThief/main/static/favicon.png"
+    },
+    {
+      "id": 7,
+      "studentName": "Viswanatha Kartha V",
+      "projectName": "Vyajan",
+      "description": "Tired of senting a message to your whatsapp chats to save your links? Vyajan is here to help you!",
+      "tags": ["Flutter", "Dart", "Mobile App", "Android", "iOS", "Link", "Manager"],
+      "githubLink": "https://github.com/anima-regem/Vyajan",
+      "projectLink": "https://github.com/anima-regem/Vyajan/releases/",
+      "image": "https://i.postimg.cc/sx4YrMmX/You-Tube-Cover-Photo.png"
     }
   ]
 }
