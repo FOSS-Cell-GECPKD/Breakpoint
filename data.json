@@ -23,12 +23,22 @@
     {
       "id": 3,
       "studentName": "Viswanatha Kartha V",
-      "projectName": "Blog made using Hugo",
+      "projectName": "theDistant",
       "description": "Blog made with hugo",
       "tags": ["Hugo", "Blog"],
       "githubLink": "https://github.com/anima-regem/theDistant.git",
       "projectLink": "https://blog.animaregem.me/",
       "image": "https://i.postimg.cc/CL604mCv/Screenshot-from-2025-02-16-09-50-34.png"
+    },
+    {
+      "id": 4,
+      "studentName": "Viswanatha Kartha V",
+      "projectName": "Gaster",
+      "description": "Who needs to go to Google Maps and search \"CNG Pumps Near Me\", when you can have an app for just that...",
+      "tags": ["Flutter", "Dart", "Google Maps API", "CNG Pumps", "Gas Stations", "Mobile App", "Android", "iOS"],
+      "githubLink": "https://github.com/anima-regem/gaster.git",
+      "projectLink": "https://github.com/anima-regem/gaster/releases/",
+      "image": "https://camo.githubusercontent.com/332696331b56231754758bfb9c68e1a38c8103d0e9ca0da36a6a485b4f9276c7/68747470733a2f2f6d65646961302e67697068792e636f6d2f6d656469612f336f726e6a57796c54547a366530534849732f323030772e776562703f6369643d64646132346435306a736761786a3179756a306c7a3932656d6b76686b7a68733178336173666b3432347171346137382665703d76315f696e7465726e616c5f6769665f62795f6964267269643d323030772e776562702663743d67"
     }
   ]
 }
