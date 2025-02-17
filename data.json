@@ -36,7 +36,7 @@
       "projectName": "theDistant",
       "description": "Blog made with hugo",
       "tags": ["Hugo", "Blog"],
-      "githubLink": "https://github.com/anima-regem/theDistant.git",
+      "githubLink": "https://github.com/anima-regem/theDistant",
       "projectLink": "https://blog.animaregem.me/",
       "image": "https://i.postimg.cc/CL604mCv/Screenshot-from-2025-02-16-09-50-34.png"
     },
@@ -46,7 +46,7 @@
       "projectName": "Gaster",
       "description": "Who needs to go to Google Maps and search \"CNG Pumps Near Me\", when you can have an app for just that...",
       "tags": ["Flutter", "Dart", "Google Maps API", "CNG Pumps", "Gas Stations", "Mobile App", "Android", "iOS"],
-      "githubLink": "https://github.com/anima-regem/gaster.git",
+      "githubLink": "https://github.com/anima-regem/gaster",
       "projectLink": "https://github.com/anima-regem/gaster/releases/",
       "image": "https://media0.giphy.com/media/3ornjWylTTz6e0SHIs/200w.webp"
     },
@@ -56,7 +56,7 @@
       "projectName": "bootThief",
       "description": "Welcome to the most over-engineered way to get book recommendations since your local librarian got replaced by a coffee machine!",
       "tags": ["Svelte", "SvelteKit", "TailwindCSS", "Groq", "Book", "Recommendations", "Web App"],
-      "githubLink": "https://github.com/anima-regem/bookThief.git",
+      "githubLink": "https://github.com/anima-regem/bookThief",
       "projectLink": "https://book-thief-chi.vercel.app/",
       "image": "https://raw.githubusercontent.com/anima-regem/bookThief/main/static/favicon.png"
     },

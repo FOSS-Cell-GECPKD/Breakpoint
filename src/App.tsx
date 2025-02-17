@@ -1,6 +1,6 @@
 import Footer from "./components/footer";
 import Intro from "./components/intro";
-import ProjectsPage from "./components/projects";
+import ProjectsPage from "./components/projectsPage";
 
 const ProjectShowcase = () => {
   return (
