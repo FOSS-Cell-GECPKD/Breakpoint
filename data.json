@@ -99,6 +99,16 @@
       "githubLink": "https://github.com/Ranger-NF/DocuFlow",
       "projectLink": "https://github.com/Ranger-NF/DocuFlow",
       "image": "https://i.postimg.cc/GhdVL31F/docuflow.jpg"
+    },
+    {
+      "id": 11,
+      "studentName": "Bhdra K N, Ananya R Krishnan, Remya C",
+      "projectName": "No Worries",
+      "description": "This project is a safety focused web applicaton designed to assist users in emergency situations",
+      "tags": ["HTML", "Javascript", "SOS", "Emergency", "ChatBot"],
+      "githubLink": "https://github.com/BHADRAKN/no-worries",
+      "projectLink": "https://bhadrakn.github.io/no-worries/",
+      "image": "https://i.postimg.cc/hP4sZpxn/No-Worries.png"
     }
     
   ]
