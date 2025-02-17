@@ -69,6 +69,37 @@
       "githubLink": "https://github.com/anima-regem/Vyajan",
       "projectLink": "https://github.com/anima-regem/Vyajan/releases/",
       "image": "https://i.postimg.cc/sx4YrMmX/You-Tube-Cover-Photo.png"
+    },
+    {
+      "id": 8,
+      "studentName": "Mohammed Fahad, Mohammed Muflih, N Fadeela",
+      "projectName": "താപസഖി (Thaapasakhi)",
+      "description": "🌡️ Temperature based music player",
+      "tags": ["Music", "Arduino", "NodeMCU", "IOT", "useless", "ntfy"],
+      "githubLink": "https://github.com/Ranger-NF/thaapasakhi",
+      "projectLink": "https://github.com/Ranger-NF/thaapasakhi",
+      "image": "https://i.postimg.cc/8kts45wc/thaapasakhi.jpg"
+    },
+    {
+      "id": 9,
+      "studentName": "Mohammed Fahad, Mohammed Shadin, Mohammed Muflih, Aysha Henan, Hima V",
+      "projectName": "Light 'Em Up",
+      "description": "🪩 NodeMCU based whack-a-mole! ",
+      "tags": ["Arcade", "Game", "Arduino", "NodeMCU", "IOT", "Hardware", "Realtime", "Reflex"],
+      "githubLink": "https://github.com/Ranger-NF/light-em-up",
+      "projectLink": "https://github.com/Ranger-NF/light-em-up",
+      "image": "https://i.postimg.cc/VkD8Qrr0/light-em-up.png"
+    },
+    {
+      "id": 10,
+      "studentName": "Mahir Sahal, Mohammed Fahad, Mohammed Muflih",
+      "projectName": "DocuFlow",
+      "description": "An app aimed at reducing the hassle of applying for a document",
+      "tags": ["Helper", "React", "NextJS", "Android", "Document", "Gemini"],
+      "githubLink": "https://github.com/Ranger-NF/DocuFlow",
+      "projectLink": "https://github.com/Ranger-NF/DocuFlow",
+      "image": "https://i.postimg.cc/GhdVL31F/docuflow.jpg"
     }
+    
   ]
 }
