@@ -1,0 +1,118 @@
+name: Add Project from Issue with PostImage
+
+on:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  add-project:
+    if: contains(github.event.issue.title, '[ADD-PROJECT]')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        
+      - name: Parse project data and extract image URL
+        id: parse
+        run: |
+          ISSUE_BODY="${{ github.event.issue.body }}"
+          echo "$ISSUE_BODY" > issue_body.txt
+          
+          # Parse fields from the issue body
+          STUDENT_NAME=$(grep -oP 'Student Name\(s\): \K.*' issue_body.txt || echo "")
+          PROJECT_NAME=$(grep -oP 'Project Name: \K.*' issue_body.txt || echo "")
+          DESCRIPTION=$(grep -oP 'Description: \K.*' issue_body.txt || echo "")
+          TAGS=$(grep -oP 'Tags: \K.*' issue_body.txt || echo "")
+          GITHUB_LINK=$(grep -oP 'GitHub Link: \K.*' issue_body.txt || echo "")
+          PROJECT_LINK=$(grep -oP 'Project Link: \K.*' issue_body.txt || echo "")
+          
+          # Extract PostImage URL from the issue body
+          # First try to find a specific PostImage URL
+          IMAGE_URL=$(grep -oP 'Image URL: \K(https?://(?:i\.)?postimg\.cc/\S+)' issue_body.txt || echo "")
+          
+          # If not found, look for any postimg.cc URL in the body
+          if [ -z "$IMAGE_URL" ]; then
+            IMAGE_URL=$(grep -oP 'https?://(?:i\.)?postimg\.cc/\S+' issue_body.txt | head -1 || echo "")
+          fi
+          
+          # If still not found, check for markdown image syntax with postimg.cc links
+          if [ -z "$IMAGE_URL" ]; then
+            IMAGE_URL=$(grep -oP '!\[.*?\]\((https?://(?:i\.)?postimg\.cc/\S+)\)' issue_body.txt | grep -oP 'https?://(?:i\.)?postimg\.cc/\S+' | head -1 || echo "")
+          fi
+          
+          # If no PostImage URL found, use a default placeholder
+          if [ -z "$IMAGE_URL" ]; then
+            IMAGE_URL="https://via.placeholder.com/300x200?text=No+Image"
+          fi
+          
+          # Ensure direct image URL format if it's a PostImage URL
+          if [[ "$IMAGE_URL" == *postimg.cc* ]] && [[ "$IMAGE_URL" != *i.postimg.cc* ]]; then
+            # Extract the image ID from the URL
+            IMAGE_ID=$(echo "$IMAGE_URL" | grep -oP 'postimg\.cc/\K[^/]+' || echo "")
+            if [ -n "$IMAGE_ID" ]; then
+              IMAGE_URL="https://i.postimg.cc/$IMAGE_ID/image.jpg"
+            fi
+          fi
+          
+          echo "IMAGE_URL=$IMAGE_URL" >> $GITHUB_ENV
+          
+          # Parse tags into JSON array format
+          TAGS_JSON="[$(echo "$TAGS" | sed 's/, */", "/g' | sed 's/^/"/' | sed 's/$/"/' )]"
+          
+          # Create JSON object
+          echo 'NEW_PROJECT_JSON<<EOF' >> $GITHUB_ENV
+          echo "{" >> $GITHUB_ENV
+          echo '  "studentName": "'"$STUDENT_NAME"'",' >> $GITHUB_ENV
+          echo '  "projectName": "'"$PROJECT_NAME"'",' >> $GITHUB_ENV
+          echo '  "description": "'"$DESCRIPTION"'",' >> $GITHUB_ENV
+          echo '  "tags": '"$TAGS_JSON"',' >> $GITHUB_ENV
+          echo '  "githubLink": "'"$GITHUB_LINK"'",' >> $GITHUB_ENV
+          echo '  "projectLink": "'"$PROJECT_LINK"'",' >> $GITHUB_ENV
+          echo '  "image": "'"$IMAGE_URL"'"' >> $GITHUB_ENV
+          echo "}" >> $GITHUB_ENV
+          echo 'EOF' >> $GITHUB_ENV
+      
+      - name: Update data.json
+        run: |
+          # Read current data.json
+          CURRENT_DATA=$(cat data.json)
+          
+          # Get highest existing ID
+          MAX_ID=$(echo $CURRENT_DATA | jq 'map(.id) | max')
+          NEW_ID=$((MAX_ID + 1))
+          
+          # Add new project with new ID
+          NEW_PROJECT_WITH_ID=$(echo "$NEW_PROJECT_JSON" | jq --arg id "$NEW_ID" '. + {id: $id|tonumber}')
+          
+          # Add new project to array
+          UPDATED_DATA=$(echo $CURRENT_DATA | jq --argjson new "$NEW_PROJECT_WITH_ID" '. + [$new]')
+          
+          # Write updated data back to file
+          echo $UPDATED_DATA | jq . > data.json
+          
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'GitHub Actions Bot'
+          git config --global user.email 'actions@github.com'
+          git add data.json
+          git commit -m "Add new project from issue #${{ github.event.issue.number }} with PostImage"
+          git push
+          
+      - name: Comment on issue
+        uses: actions/github-script@v5
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: 'Project added successfully to data.json with image URL: `${{ env.IMAGE_URL }}`! The changes have been committed.'
+            })
+            
+            github.rest.issues.update({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'closed'
+            })
