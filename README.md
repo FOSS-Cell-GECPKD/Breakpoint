@@ -3,6 +3,8 @@
 
 A space for YOU to showcase YOUR projects!
 
+---
+
 ## How to Add Your Project
 Welcome! We're excited to showcase your project. Follow these simple steps to add your work to our collection.
 
@@ -45,3 +47,30 @@ Here are some commonly used tags:
 - If you're unsure about image hosting, we recommend using [Postimg](https://postimages.org/)
 - For JSON validation, use [JSONLint](https://jsonlint.com/)
 - If you have questions, open an issue in the repository
+
+
+## How to run locally?
+
+1. Clone the repo
+```sh
+git clone https://github.com/FOSS-Cell-GECPKD/Breakpoint
+```
+
+2. Install the required packages
+```sh
+npm i
+```
+
+3. Run in development mode
+```sh
+npm run dev
+```
+
+## Technology Used
+- Typescript
+- Tailwind
+- Vite
+  Libraries used:
+    - lucide-react
+    - framer-motion
+    - @icons-pack/react-simple-icons
