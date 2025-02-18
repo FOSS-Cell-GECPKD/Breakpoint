@@ -42,3 +42,11 @@ Here are some commonly used tags:
 - If you're unsure about image hosting, we recommend using [Postimg](https://postimages.org/)
 - For JSON validation, use [JSONLint](https://jsonlint.com/)
 - If you have questions, open an issue in the repository
+
+Take a photo on their phone
+Go to postimages.org in their mobile browser
+Upload the photo
+Copy the "Direct link" URL
+Open your GitHub repository, create a new issue using the template
+Paste the PostImage URL and fill in the other details
+Submit the issue

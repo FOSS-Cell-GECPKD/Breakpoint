@@ -1,7 +1,7 @@
 ---
 name: Project Submission
 about: Submit your project using this template
-title: "[New Project]"
+title: "[ADD-PROJECT] Project Name"
 labels: enhancement
 assignees: Ranger-NF
 
