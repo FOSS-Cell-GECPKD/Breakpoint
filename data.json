@@ -112,6 +112,15 @@
     },
     {
       "id": 12,
+      "studentName": "Anupama J A", 
+      "projectName": "Portfolio", 
+      "description": " Personal portfolio made using HTML, CSS & JAVASCRIPT ", 
+      "tags": ["HTML", "Javascript", "Portfolio"],
+      "githubLink": "https://github.com/ANUPAMA-JA29/portfolio", "projectLink":"https://anupama-ja29.github.io/portfolio/", 
+      "image": "https://i.postimg.cc/T14WkxRL/Anupama-portfolio.png"
+    },
+    {
+      "id":13
       "studentName": "Mohammed Shadin",
       "projectName": "Crush Compatibility Calculator",
       "description": "A fun tool to calculate compatibility with your crush",
@@ -120,6 +129,5 @@
       "projectLink": "https://crush-compat-calc.vercel.app/",
       "image": "https://raw.githubusercontent.com/Scemworks/compat-calc/refs/heads/main/main.png"
     }
-    
   ]
 }
