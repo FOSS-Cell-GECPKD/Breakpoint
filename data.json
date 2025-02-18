@@ -109,7 +109,19 @@
       "githubLink": "https://github.com/BHADRAKN/no-worries",
       "projectLink": "https://bhadrakn.github.io/no-worries/",
       "image": "https://i.postimg.cc/hP4sZpxn/No-Worries.png"
+    },
+    {
+      "id": 12,
+      "studentName": "Anupama J A", 
+      "projectName": "Portfolio", 
+      "description": " Personal portfolio made using HTML, CSS & JAVASCRIPT ", 
+      "tags": ["HTML", "Javascript", "Portfolio"],
+      "githubLink": "https://github.com/ANUPAMA-JA29/portfolio", "projectLink":"https://anupama-ja29.github.io/portfolio/", 
+"image": "https://i.postimg.cc/T14WkxRL/Anupama-portfolio.png"
     }
+    
+
+
     
   ]
 }
