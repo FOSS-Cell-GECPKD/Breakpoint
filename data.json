@@ -109,6 +109,16 @@
       "githubLink": "https://github.com/BHADRAKN/no-worries",
       "projectLink": "https://bhadrakn.github.io/no-worries/",
       "image": "https://i.postimg.cc/hP4sZpxn/No-Worries.png"
+    },
+    {
+      "id": 12,
+      "studentName": "Mohammed Shadin",
+      "projectName": "Crush Compatibility Calculator",
+      "description": "A fun tool to calculate compatibility with your crush",
+      "tags": ["HTML", "CSS", "Javascript", "Flask"],
+      "githubLink": "https://github.com/Scemworks/compat-calc",
+      "projectLink": "https://crush-compat-calc.vercel.app/",
+      "image": "https://raw.githubusercontent.com/Scemworks/compat-calc/refs/heads/main/main.png"
     }
     
   ]
