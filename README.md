@@ -70,7 +70,13 @@ npm run dev
 - Typescript
 - Tailwind
 - Vite
-  Libraries used:
-    - lucide-react
-    - framer-motion
-    - @icons-pack/react-simple-icons
+
+
+### Libraries used:
+- lucide-react
+- framer-motion
+- @icons-pack/react-simple-icons
+
+---
+
+Made with 💭 by FOSS GEC Palakkad
