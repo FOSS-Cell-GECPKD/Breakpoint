@@ -118,7 +118,7 @@
       "tags": ["HTML", "CSS", "Javascript", "Flask"],
       "githubLink": "https://github.com/Scemworks/compat-calc",
       "projectLink": "https://crush-compat-calc.vercel.app/",
-      "image": "https://github.com/Scemworks/compat-calc/blob/main/main.png"
+      "image": "https://raw.githubusercontent.com/Scemworks/compat-calc/refs/heads/main/main.png"
     }
     
   ]
