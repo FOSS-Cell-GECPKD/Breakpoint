@@ -25,14 +25,13 @@ jobs:
           TAGS=$(grep -oP 'Tags: \K.*' issue_body.txt || echo "")
           GITHUB_LINK=$(grep -oP 'GitHub Link: \K.*' issue_body.txt || echo "")
           PROJECT_LINK=$(grep -oP 'Project Link: \K.*' issue_body.txt || echo "")
-          
-          # Extract PostImage URL from the issue body
-          # First try to find a specific PostImage URL
-          IMAGE_URL=$(grep -oP 'Image URL: \K(https?://(?:i\.)?postimg\.cc/\S+)' issue_body.txt || echo "")
-          
-          # If not found, look for any postimg.cc URL in the body
-          if [ -z "$IMAGE_URL" ]; then
-            IMAGE_URL=$(grep -oP 'https?://(?:i\.)?postimg\.cc/\S+' issue_body.txt | head -1 || echo "")
+                    
+          # Extract PostImage URL from the issue body more robustly
+          IMAGE_URL=$(grep -oP 'Image URL: *\K(https?://(?:i\.)?postimg\.cc/\S+)' issue_body.txt || echo "")
+                    
+          # Validate image URL before proceeding
+          if [[ "$IMAGE_URL" == *"paste the image"* ]] || [[ "$IMAGE_URL" != http* ]]; then
+            IMAGE_URL="https://via.placeholder.com/300x200?text=No+Image"
           fi
           
           # If still not found, check for markdown image syntax with postimg.cc links
