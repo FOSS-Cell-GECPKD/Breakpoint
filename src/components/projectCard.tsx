@@ -1,6 +1,4 @@
-// src/components/ProjectCard.tsx
-
-import React from 'react';
+import React from "react";
 import { ExternalLink, Star } from "lucide-react";
 import { SiGithub } from "@icons-pack/react-simple-icons";
 
@@ -43,9 +41,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             </span>
           )}
         </span>
-        <p className="text-sm text-gray-600 mb-2">
-          by {project.studentName}
-        </p>
+        <p className="text-sm text-gray-600 mb-2">by {project.studentName}</p>
         <p className="text-gray-700 mb-4">{project.description}</p>
 
         <div className="flex flex-wrap gap-2 mb-4">
