@@ -72,7 +72,7 @@ const Intro = () => {
                   className="text-xl md:text-2xl text-gray-400"
                   variants={textVariants}
                 >
-                  Pause. Build. Inspire.
+                  Build. Pause. Inspire.
                 </motion.p>
               </div>
             </div>

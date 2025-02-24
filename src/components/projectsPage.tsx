@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Search, PlusIcon, AlertCircle, Filter } from "lucide-react";
+import { Search, AlertCircle, Filter, HelpCircle, Blocks } from "lucide-react";
 import { motion } from "framer-motion";
 import ProjectCard, { Project } from "../components/projectCard";
 import { useGitHubStars } from "../hooks/useGithubStars";
@@ -57,13 +57,22 @@ const ProjectsPage = () => {
             <h1 className="text-4xl font-bold text-gray-900 mb-2 md:mb-0">
               Breakpoint;
             </h1>
-            <a
-              className="flex justify-self-center h-fit w-fit p-2 bg-black rounded-md text-white"
-              href="https://opnform.com/forms/my-form-k1tkuv"
-            >
-              <PlusIcon />
-              Add My Project
-            </a>
+            <div className="flex gap-2">
+              <a
+                className="flex justify-self-center border gap-1 h-fit w-fit p-2 bg-white rounded-md text-black"
+                href="/Breakpoint/benefits"
+              >
+                <HelpCircle />
+                Why Breakpoint
+              </a>
+              <a
+                className="flex justify-self-center h-fit w-fit p-2 gap-2 bg-black rounded-md text-white"
+                href="https://opnform.com/forms/my-form-k1tkuv"
+              >
+                <Blocks />
+                Add My Project
+              </a>
+            </div>
           </div>
 
           <div className="flex flex-col md:flex-row md:flex-wrap md:justify-center md:gap-4 mb-4">
