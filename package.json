@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://foss-cell-gecpkd.github.io/Breakpoint/#/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

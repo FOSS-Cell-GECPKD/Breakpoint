@@ -60,7 +60,7 @@ const ProjectsPage = () => {
             <div className="flex gap-2">
               <a
                 className="flex justify-self-center border gap-1 h-fit w-fit p-2 bg-white rounded-md text-black"
-                href="/Breakpoint/benefits"
+                href="/Breakpoint/#/benefits"
               >
                 <HelpCircle />
                 Why Breakpoint
