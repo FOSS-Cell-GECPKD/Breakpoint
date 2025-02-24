@@ -12,10 +12,14 @@ const ProjectsPage = () => {
   const [sortBy, setSortBy] = useState("stars"); // Options: none, stars, name
   const [showFilters, setShowFilters] = useState(false);
 
-  const { projects, isLoading, rateLimit, refreshStars } = useGitHubStars(data.projects as Project[]);
+  const { projects, isLoading, rateLimit, refreshStars } = useGitHubStars(
+    data.projects as Project[],
+  );
 
   // Get unique tags from all projects
-  const allTags = [...new Set(data.projects.flatMap((project: Project) => project.tags))];
+  const allTags = [
+    ...new Set(data.projects.flatMap((project: Project) => project.tags)),
+  ];
 
   const filteredProjects = projects.filter((project) => {
     const matchesSearch =
@@ -32,7 +36,7 @@ const ProjectsPage = () => {
     } else if (sortBy === "name") {
       return a.projectName.localeCompare(b.projectName);
     }
-    return 0; 
+    return 0;
   });
 
   const handleRefreshStars = () => {
@@ -55,7 +59,7 @@ const ProjectsPage = () => {
             </h1>
             <a
               className="flex justify-self-center h-fit w-fit p-2 bg-black rounded-md text-white"
-              href="https://github.com/FOSS-Cell-GECPKD/Breakpoint?tab=readme-ov-file#how-to-add-your-project"
+              href="https://opnform.com/forms/my-form-k1tkuv"
             >
               <PlusIcon />
               Add My Project
@@ -76,16 +80,23 @@ const ProjectsPage = () => {
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                 />
-                <button 
+                <button
                   className="md:hidden px-3 bg-white border border-l-0 rounded-r-lg flex items-center"
                   onClick={() => setShowFilters(!showFilters)}
                 >
-                  <Filter size={18} className={showFilters ? "text-yellow-500" : "text-gray-500"} />
+                  <Filter
+                    size={18}
+                    className={
+                      showFilters ? "text-yellow-500" : "text-gray-500"
+                    }
+                  />
                 </button>
               </div>
             </div>
-            
-            <div className={`${showFilters || window.innerWidth >= 768 ? 'flex' : 'hidden'} flex-wrap md:flex gap-2 items-center`}>
+
+            <div
+              className={`${showFilters || window.innerWidth >= 768 ? "flex" : "hidden"} flex-wrap md:flex gap-2 items-center`}
+            >
               <select
                 className="border rounded-lg px-3 py-2 bg-white flex-grow md:flex-grow-0 mb-2 md:mb-0"
                 value={selectedTag}
@@ -93,7 +104,9 @@ const ProjectsPage = () => {
               >
                 <option value="">All Tags</option>
                 {allTags.map((tag) => (
-                  <option key={tag} value={tag}>{tag}</option>
+                  <option key={tag} value={tag}>
+                    {tag}
+                  </option>
                 ))}
               </select>
 
@@ -120,10 +133,14 @@ const ProjectsPage = () => {
           {/* Rate limit warning */}
           {rateLimit && rateLimit.remaining < 10 && (
             <div className="bg-yellow-50 border border-yellow-200 text-yellow-800 p-3 rounded-md mb-4 flex items-start gap-2">
-              <AlertCircle className="text-yellow-600 shrink-0 mt-1" size={20} />
+              <AlertCircle
+                className="text-yellow-600 shrink-0 mt-1"
+                size={20}
+              />
               <p className="text-sm">
-                <strong>GitHub API rate limit warning:</strong> {rateLimit.remaining} requests remaining.
-                Rate limit will reset at {rateLimit.resetTime}.
+                <strong>GitHub API rate limit warning:</strong>{" "}
+                {rateLimit.remaining} requests remaining. Rate limit will reset
+                at {rateLimit.resetTime}.
               </p>
             </div>
           )}
