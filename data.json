@@ -129,6 +129,16 @@
       "githubLink": "https://github.com/Scemworks/compat-calc",
       "projectLink": "https://crush-compat-calc.vercel.app/",
       "image": "https://raw.githubusercontent.com/Scemworks/compat-calc/refs/heads/main/main.png"
+    },
+    {
+      "id":14,
+      "studentName": "UBU",
+      "projectName": "Doraemon-VA",
+      "description": "Doraemon is a voice-activated personal assistant built with Python. It can manage your schedule, open and close apps, control system volume, browse the web, check system status, and interact through voice commands. Currently in its early stages, this project aims to evolve into a powerful desktop assistant with features like LLM integration, music search, and more.",
+      "tags": ["AI", "Assistant", "Python"],
+      "githubLink": "https://github.com/UBU11/Doraemon-Bot/",
+      "projectLink": "https://github.com/UBU11/Doraemon-Bot/",
+      "image": "https://static.wikia.nocookie.net/96ed89d5-e70d-478b-a7c4-55a94224d064"
     }
   ]
 }
