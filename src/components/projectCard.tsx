@@ -42,7 +42,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           )}
         </span>
         <p className="text-sm text-gray-600 mb-2">by {project.studentName}</p>
-        <p className="text-gray-700 mb-4">{project.description}</p>
+        <p className="line-clamp-3 text-gray-700 mb-4 max-h-24 overflow-hidden overflow-ellipsis">{project.description}</p>
 
         <div className="flex flex-wrap gap-2 mb-4">
           {project.tags.map((tag) => (
