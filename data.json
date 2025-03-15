@@ -69,6 +69,16 @@
       "githubLink": "https://github.com/anima-regem/Vyajan",
       "projectLink": "https://github.com/anima-regem/Vyajan/releases/",
       "image": "https://i.postimg.cc/sx4YrMmX/You-Tube-Cover-Photo.png"
+    },
+     {
+      "id": 8,
+      "studentName": "Akshay K A ",
+      "projectName": "Coldfetch",
+      "description": "Tired of senting a message to your whatsapp chats to save your links? Vyajan is here to help you!",
+      "tags": ["Shell", "Linux", "Terminal App", "System", "info fetch", "data", "Tools"],
+      "githubLink": "https://github.com/akshay-k-a-dev/coldfetch",
+      "projectLink": "https://github.com/akshay-k-a-dev/coldfetch/releases/",
+      "image": "https://i.postimg.cc/2SHPQ32G/a-terminal-app-with-a-command-line-inter-Q-kp-Mg-Fq-SHm-BNn-SOc-Gz5r-A-f5-Ak9-Ggr-T7i5-Z3s-EN3-BSjw.jpg"
     }
   ]
 }
