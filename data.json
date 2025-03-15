@@ -139,6 +139,16 @@
       "githubLink": "https://github.com/UBU11/Doraemon-Bot/",
       "projectLink": "https://github.com/UBU11/Doraemon-Bot/",
       "image": "https://static.wikia.nocookie.net/96ed89d5-e70d-478b-a7c4-55a94224d064"
+    },
+  {
+      "id":15,
+      "studentName": "Askhay K A",
+      "projectName": "COLDFETCH",
+      "description":"ColdFetch is a lightweight, high-performance command-line tool designed for fetching and displaying system information in a concise and visually appealing manner. Inspired by tools like Neofetch, ColdFetch prioritizes speed and minimal resource usage while providing essential details about the operating system, hardware, and software environment. ",
+      "tags": ["System Info", "CLI", "Lightweight", "Performance", "Open Source"],
+      "githubLink": "https://github.com/akshay-k-a-dev/coldfetch/",
+      "projectLink": "https://github.com/akshay-k-a-dev/coldfetch/",
+      "image": "https://i.postimg.cc/2SHPQ32G/a-terminal-app-with-a-command-line-inter-Q-kp-Mg-Fq-SHm-BNn-SOc-Gz5r-A-f5-Ak9-Ggr-T7i5-Z3s-EN3-BSjw.jpg"
     }
   ]
 }
