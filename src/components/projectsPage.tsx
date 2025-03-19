@@ -1,5 +1,12 @@
 import { useState } from "react";
-import { Search, AlertCircle, Filter, HelpCircle, Blocks } from "lucide-react";
+import {
+  Search,
+  AlertCircle,
+  Filter,
+  HelpCircle,
+  Blocks,
+  RefreshCw,
+} from "lucide-react";
 import { motion } from "framer-motion";
 import ProjectCard, { Project } from "../components/projectCard";
 import { useGitHubStars } from "../hooks/useGithubStars";
@@ -53,28 +60,6 @@ const ProjectsPage = () => {
     >
       <div className="max-w-7xl mx-auto">
         <div>
-          <div className="grid justify-center md:flex md:justify-between text-center mb-4">
-            <h1 className="text-4xl font-bold text-gray-900 mb-2 md:mb-0">
-              Breakpoint;
-            </h1>
-            <div className="flex gap-2">
-              <a
-                className="flex justify-self-center border gap-1 h-fit w-fit p-2 bg-white rounded-md text-black"
-                href="/Breakpoint/#/benefits"
-              >
-                <HelpCircle />
-                Why Breakpoint
-              </a>
-              <a
-                className="flex justify-self-center h-fit w-fit p-2 gap-2 bg-black rounded-md text-white"
-                href="https://opnform.com/forms/my-form-k1tkuv"
-              >
-                <Blocks />
-                Add My Project
-              </a>
-            </div>
-          </div>
-
           <div className="flex flex-col md:flex-row md:flex-wrap md:justify-center md:gap-4 mb-4">
             <div className="relative flex-grow mb-2 md:mb-0">
               <Search
@@ -134,8 +119,30 @@ const ProjectsPage = () => {
                 className="border rounded-lg px-3 py-2 bg-white hover:bg-gray-100 flex-grow md:flex-grow-0"
                 title="Refresh GitHub stars (clears cache)"
               >
-                Refresh Stars
+                <span className="flex items-center gap-1">
+                  <RefreshCw size={16} />
+                  Refresh Stars
+                </span>
               </button>
+            </div>
+          </div>
+          <div className="grid justify-center md:flex md:justify-between text-center mb-4">
+            <div></div>
+            <div className="flex gap-2">
+              <a
+                className="flex justify-self-center border gap-1 h-fit w-fit p-2 bg-white rounded-md text-black"
+                href="/Breakpoint/#/benefits"
+              >
+                <HelpCircle />
+                Why Breakpoint
+              </a>
+              <a
+                className="flex justify-self-center h-fit w-fit p-2 gap-2 bg-black rounded-md text-white"
+                href="https://opnform.com/forms/my-form-k1tkuv"
+              >
+                <Blocks />
+                Add My Project
+              </a>
             </div>
           </div>
 

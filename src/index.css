@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 body {
-    font-family: "Bricolage Grotesque", serif;
-    background-image: url("assets/grid.svg"); 
+    font-family: "Bricolage Grotesque", "Poppins", serif;
+    background-image: url("assets/grid.svg");
     background-size: 150px 150px;
     background-repeat: repeat;
 }
