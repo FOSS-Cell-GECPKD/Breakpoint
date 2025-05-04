@@ -1,15 +1,27 @@
 # Breakpoint
 *Pause. Build. Inspire*
 
+
 A space for YOU to showcase YOUR projects!
 
----
+
+> [!NOTE]
+> This repository has been archived in favour of [FOSS Website](https://github.com/FOSS-Cell-GECPKD/Website). This page has been made a part of that project.
+
+
+<p align="center">
+<img src="docs/website-hero.webp" width="700" height="auto" title="Hero Page of the Website">
+</p>
 
 ## How to Add Your Project
 Welcome! We're excited to showcase your project. Follow these simple steps to add your work to our collection.
 
 ### How to Submit
-1. Fork the repository
+1. Fork the repository - The Official Website (See the Note above for details)
+```sh
+git clone https://github.com/FOSS-Cell-GECPKD/Website.git
+```
+
 2. Add your project to `data.json`
 3. Place your project at the end of the "projects" array, with the given template:
 ```json
